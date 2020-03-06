@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lightyear1</title>
+</head>
+<body>
+  <p id="dat"></p>
+<script> 
+  var d;
+  function dt(){
+    d= Date(Date.now()).toString();                    
+    document.getElementById('dat').innerHTML=
+      d.substring(0,15)+'<br>'+d.substring(16,24);
+    setTimeout(dt,1000);
+  }
+  dt();
+</script> 
+<style>
+  #dat{width:70%; border-radius:20px; color:yellow; background:purple; font-size:48px;}
+</style>  
+</body>
+</html>
